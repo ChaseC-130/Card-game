@@ -60,8 +60,8 @@
         "Text": "Opponent reveals their hand, you may select a Temporal card for them to discard"
     },
     {
-        "Name": "Jerm's Gas",
-        "Category": "Elemental",
-        "Text": "Opponent loses the game"
+        "Name": "Different card name",
+        "Category": "TeST",
+        "Text": "Here is some test text to see what happens O_o"
     }
-    ]
+]
