@@ -5,6 +5,8 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import Hand from './Hand';
 import OpponentHand from './OpponentHand';
+import Decklist from './Decklist';
+import ViewCard from './ViewCard';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -15,8 +17,24 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function Board() {
+
+    const [name, setName] = React.useState("");
+    const [text, setText] = React.useState("");
+    const [open, setOpen] = React.useState(false);
+    const [inHand, setInHand] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+
+
+
+    
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <>
+    <ViewCard inHand={inHand} name={name} text={text} open={open} handleClose={handleClose} />
+    <Decklist setInHand={setInHand} setText={setText} setName={setName} handleOpen={handleOpen} />
+    <Box sx={{ flexGrow: 1, ml: '100px'}}>
+        
       <Grid container spacing={2}>
         <Grid xs={12}>
           <OpponentHand />
@@ -26,9 +44,10 @@ export default function Board() {
             bottom: 0,
             
         }}>
-            <Hand />
+            <Hand setInHand={setInHand} setText={setText} setName={setName} handleOpen={handleOpen} />
       </Grid>
       </Grid>
     </Box>
+    </>
   );
 }

@@ -18,11 +18,7 @@
         "Category": "Temporal",
         "Text": "Trigger: Opponent plays a non-Temporal card Action: Opponent loses mana equal to the played card's tier"
     },
-    {
-        "Name": "",
-        "Category": "",
-        "Text": ""
-    },
+
     {
         "Name": "Flames of Hatred",
         "Category": "Elemental",
