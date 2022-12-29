@@ -1,28 +1,54 @@
 [
     {
-        "Name": "Blue Shard",
+        "Name": "Water Shard",
         "Category": "Synthesis",
-        "Text": "Gain 2 mana; Synthesis: Play with Red Shard, gain 5 mana instead"
+        "Text": "Gain 1 mana; Synthesis: If played with another Shard, gain 4X mana instead"
+        // For all Shard cards, "X" is the total number of Shard cards played in Synthesis
     },
     {
-        "Name": "Red Shard",
+        "Name": "Fire Shard",
         "Category": "Synthesis",
-        "Text": "Opponent loses 2 mana; Synthesis: Play with Blue Shard, opponent loses 5 mana instead"
+        "Text": "Opponent loses 1 mana; Synthesis: If played with another Shard, opponent loses 4X mana instead"
     },
     {
-        "Name": "Wurm's Trap",
+        "Name": "Wind Shard",
+        "Category": "Synthesis",
+        "Text": "You may take 1 additional draw step this turn; Synthesis: If played with another Shard, you may take X additional draw steps this turn"
+    },
+    {
+        "Name": "Nature Shard",
+        "Category": "Synthesis",
+        "Text": "Opponent may not tutor on their next turn; Synthesis: If played with another Shard, opponent may not tutor for their next 2X turns"
+    },
+    {
+        "Name": "King Jerim's Crown",
+        "Category": "Synthesis",
+        "Text": "Opponent loses 1 mana; Synthesis: If played in Synthesis with King Jerim's Ring and King Jerim's Scepter, opponent loses 20 mana instead"
+    },
+    {
+        "Name": "King Jerim's Ring",
+        "Category": "Synthesis",
+        "Text": "Opponent loses 1 mana; Synthesis: If played in Synthesis with King Jerim's Crown and King Jerim's Scepter, opponent loses 20 mana instead"
+    },
+    {
+        "Name": "King Jerim's Scepter",
+        "Category": "Synthesis",
+        "Text": "Opponent loses 1 mana; Synthesis: If played in Synthesis with King Jerim's Crown and King Jerim's Ring, opponent loses 20 mana instead"
+    },
+    {
+        "Name": "Sand Worm's Trap",
         "Category": "Temporal",
         "Text": "Trigger: Opponent activates a synthesis effect Action: The synthesized cards' effects act as if played individually"
     },
     {
         "Name": "Mana rebound",
         "Category": "Temporal",
-        "Text": "Trigger: Opponent plays a non-Temporal card Action: Opponent loses mana equal to the played card's tier"
+        "Text": "Trigger: Opponent plays a non-Temporal card Action: Opponent loses mana equal to twice the played card's tier"
     },
     {
-        "Name": "",
-        "Category": "",
-        "Text": ""
+        "Name": "Pain Share",
+        "Category": "Temporal",
+        "Text": "Trigger: You lose mana Action: Opponent loses the same amount of mana"
     },
     {
         "Name": "Flames of Hatred",
@@ -32,12 +58,23 @@
     {
         "Name": "Lightning's Fury",
         "Category": "Elemental",
-        "Text": "Opponent loses 1 mana for everytime they've tutored this game"
+        "Text": "Opponent loses 1 mana for every time they've tutored this game"
+    },
+    {
+        "Name": "Thunder's Terror",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana for each of their trap cards on the field"
     },
     {
         "Name": "Tornado",
         "Category": "Elemental",
-        "Text": "Tornado does not trigger temporal cards. Remove a card from the field"
+        "Text": "Tornado does not trigger temporal cards. Remove a Temporal card from the field"
+    },
+    {
+        "Name": "Corruption",
+        "Category": "Elemental",
+        "Text": "Opponent loses X mana"
+        // "X" is equal to the number of turns that have passed this game
     },
     {
         "Name": "New Beginnings",
@@ -45,18 +82,38 @@
         "Text": "Opponent discards 2 cards and draws 2 cards"
     },
     {
-        "Name": "Devil's Advocate",
+        "Name": "Blinded by Greed",
         "Category": "Divination",
-        "Text": "Opponent may not tutor for the next 2 turns"
+        "Text": "Opponent may not tutor for the next two turns"
     },
     {
-        "Name": "Wurm's Perception",
+        "Name": "Peek",
         "Category": "Divination",
         "Text": "Opponent reveals their hand"
     },
     {
-        "Name": "Wurm's Destruction",
+        "Name": "King Jerim's Bane",
         "Category": "Divination",
-        "Text": "Opponent reveals their hand, you may select a Temporal card for them to discard"
+        "Text": "Opponent reveals their hand - a Temporal card of your choice becomes exhausted"
+    },
+    {
+        "Name": "Penance",
+        "Category": "Divination",
+        "Text": "Opponent reveals their hand - take a card from their hand but lose mana equal to twice the card's tier"
+    },
+    {
+        "Name": "Confusion",
+        "Category": "Temporal",
+        "Text": "Trigger: Opponent Tutors Action: Opponent loses 6 mana instead of 2"
+    },
+    {
+        "Name": "Holy Protection",
+        "Category": "Elemental",
+        "Text": "Your next Synthesis card(s) will not trigger Temporal Cards"
+    },
+    {
+        "Name": "Silence",
+        "Category": "Temporal",
+        "Text": "Trigger: Opponent plays an Elemental card Action: The card becomes exhausted before activating"
     },
 ]
