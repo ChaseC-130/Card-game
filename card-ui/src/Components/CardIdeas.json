@@ -1,0 +1,61 @@
+[{
+        "Name": "Blue Shard",
+        "Category": "Synthesis",
+        "Text": "Gain 2 mana; Synthesis: Play with Red Shard, gain 5 mana instead"
+    },
+    {
+        "Name": "Red Shard",
+        "Category": "Synthesis",
+        "Text": "Opponent loses 2 mana; Synthesis: Play with Blue Shard, opponent loses 5 mana instead"
+    },
+    {
+        "Name": "Wurm's Trap",
+        "Category": "Temporal",
+        "Text": "Trigger: Opponent activates a synthesis effect Action: The synthesized cards' effects act as if played individually"
+    },
+    {
+        "Name": "Mana rebound",
+        "Category": "Temporal",
+        "Text": "Trigger: Opponent plays a non-Temporal card Action: Opponent loses mana equal to the played card's tier"
+    },
+    {
+        "Name": "",
+        "Category": "",
+        "Text": ""
+    },
+    {
+        "Name": "Flames of Hatred",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana for each card in their hand"
+    },
+    {
+        "Name": "Lightning's Fury",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana for everytime they've tutored this game"
+    },
+    {
+        "Name": "Tornado",
+        "Category": "Elemental",
+        "Text": "Tornado does not trigger temporal cards. Remove a card from the field"
+    },
+    {
+        "Name": "New Beginnings",
+        "Category": "Divination",
+        "Text": "Opponent discards 2 cards and draws 2 cards"
+    },
+    {
+        "Name": "Devil's Advocate",
+        "Category": "Divination",
+        "Text": "Opponent may not tutor for the next 2 turns"
+    },
+    {
+        "Name": "Wurm's Perception",
+        "Category": "Divination",
+        "Text": "Opponent reveals their hand"
+    },
+    {
+        "Name": "Wurm's Destruction",
+        "Category": "Divination",
+        "Text": "Opponent reveals their hand, you may select a Temporal card for them to discard"
+    }
+]
