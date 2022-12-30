@@ -38,7 +38,7 @@
     {
         "Name": "Sand Worm's Trap",
         "Category": "Temporal",
-        "Text": "Trigger: Opponent activates a synthesis effect Action: The synthesized cards' effects act as if played individually"
+        "Text": "Trigger: Opponent activates a synthesis effect Action: The card effects act as if played individually"
     },
     {
         "Name": "Mana rebound",
@@ -71,7 +71,12 @@
         "Text": "Tornado does not trigger temporal cards. Remove a Temporal card from the field"
     },
     {
-        "Name": "Corruption",
+        "Name": "Hurricane",
+        "Category": "Elemental",
+        "Text": "Remove 2 Temporal cards from the field"
+    },
+    {
+        "Name": "Eternal Corruption",
         "Category": "Elemental",
         "Text": "Opponent loses X mana"
         // "X" is equal to the number of turns that have passed this game
@@ -82,9 +87,24 @@
         "Text": "Opponent discards 2 cards and draws 2 cards"
     },
     {
+        "Name": "Crystal Ball",
+        "Category": "Divination",
+        "Text": "Look at the top 3 cards of your deck"
+    },
+    {
+        "Name": "Witch's Eye",
+        "Category": "Divination",
+        "Text": "Lose 1 mana.  Look at the top 3 cards of your deck and add one to your hand"
+    },
+    {
         "Name": "Blinded by Greed",
         "Category": "Divination",
-        "Text": "Opponent may not tutor for the next two turns"
+        "Text": "Opponent may not tutor for the next 3 turns"
+    },
+    {
+        "Name": "Insider Trading",
+        "Category": "Divination",
+        "Text": "Look at the next 2 cards that your opponent tutors"
     },
     {
         "Name": "Peek",
@@ -115,5 +135,67 @@
         "Name": "Silence",
         "Category": "Temporal",
         "Text": "Trigger: Opponent plays an Elemental card Action: The card becomes exhausted before activating"
+    },
+    {
+        "Name": "Elemental Lock",
+        "Category": "Elemental",
+        "Text": "Opponent cannot play Synthesis cards next turn"
+    },
+    {
+        "Name": "Nature's Balance",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana.  Opponent lose 5 mana instead if they have more mana than you"
+    },
+    {
+        "Name": "Water of Life",
+        "Category": "Elemental",
+        "Text": "Gain 1 mana for every card you play after this one this turn"
+    },
+    {
+        "Name": "Priest's Blessing",
+        "Category": "Elemental",
+        "Text": "Gain X mana"
+        // Where "X" is the current turn divided by 2
+    },
+    {
+        "Name": "World Fire",
+        "Category": "Elemental",
+        "Text": "Both players lose 10 mana"
+    },
+    {
+        "Name": "Engineer's Folly",
+        "Category": "Elemental",
+        "Text": "Exhaust all Temporal cards on the field"
+    },
+    {
+        "Name": "Regrowth",
+        "Category": "Elemental",
+        "Text": "Return any 1 exhausted card you've played this game back to your hand"
+    },
+    {
+        "Name": "The Cost of Knowledge",
+        "Category": "Divination",
+        "Text": "Lose 2 mana.  Exhaust a random card from the opponents hand"
+    },
+    {
+        "Name": "Poison Dart Frog",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana each turn for the next 4 turns"
+    },
+    {
+        "Name": "Dryad's Curse",
+        "Category": "Synthesis",
+        "Text": "Opponent loses 1 mana; Synthesis: If played in Synthesis with an elemental card, opponent loses 4 mana instead"
+    },
+    {
+        "Name": "Dryad's Wrath",
+        "Category": "Synthesis",
+        "Text": "Opponent loses 1 mana; Synthesis: If played in Synthesis with Temporal cards, Opponent loses 1 + 2X mana instead"
+        // Where "X" is the number of Temporal cards played at the same time
+    },
+    {
+        "Name": "Rogue's Gamble",
+        "Category": "Synthesis",
+        "Text": "Nothing; Synthesis: If played in Synthesis with any card(s) that causes an opponent to lose mana, opponent loses twice that much total mana instead"
     },
 ]
