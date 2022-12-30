@@ -1,0 +1,11 @@
+Package ui into Electron in order to have as thick client (Desktop application)
+
+Create backend using Socket.io
+
+Connect to backend with client socket.io 
+
+Implement IAM (Identity and access management, E,g, OAuth2?)
+
+Design stateful UI entirely with as many variables as possible (No static defined values)
+- Do not set mana from front end, instead send requet to backend, do calculations server side, re-render state
+- All stateful variables should be compartminalized in their own component
