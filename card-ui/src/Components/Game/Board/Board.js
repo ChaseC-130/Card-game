@@ -3,10 +3,10 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
-import Hand from './Hand';
-import OpponentHand from './OpponentHand';
-import Decklist from './Decklist';
-import ViewCard from './ViewCard';
+import Hand from '../Cards/Hand';
+import OpponentHand from '../Cards/OpponentHand';
+import Decklist from '../Cards/Decklist';
+import ViewCard from '../Cards/ViewCard';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',

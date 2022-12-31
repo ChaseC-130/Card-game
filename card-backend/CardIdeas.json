@@ -3,7 +3,6 @@
         "Name": "Water Shard",
         "Category": "Synthesis",
         "Text": "Gain 1 mana; Synthesis: If played with another Shard, gain 4X mana instead"
-        // For all Shard cards, "X" is the total number of Shard cards played in Synthesis
     },
     {
         "Name": "Fire Shard",
@@ -79,7 +78,6 @@
         "Name": "Eternal Corruption",
         "Category": "Elemental",
         "Text": "Opponent loses X mana"
-        // "X" is equal to the number of turns that have passed this game
     },
     {
         "Name": "New Beginnings",
@@ -155,7 +153,6 @@
         "Name": "Priest's Blessing",
         "Category": "Elemental",
         "Text": "Gain X mana"
-        // Where "X" is the current turn divided by 2
     },
     {
         "Name": "World Fire",
@@ -191,10 +188,10 @@
         "Name": "Dryad's Wrath",
         "Category": "Synthesis",
         "Text": "Opponent loses 1 mana; Synthesis: If played in Synthesis with Temporal cards, Opponent loses 1 + 2X mana instead"
-        // Where "X" is the number of Temporal cards played at the same time
     },
     {
         "Name": "Rogue's Gamble",
         "Category": "Synthesis",
         "Text": "Nothing; Synthesis: If played in Synthesis with any card(s) that causes an opponent to lose mana, opponent loses twice that much total mana instead"
     }
+]

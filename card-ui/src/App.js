@@ -1,5 +1,5 @@
 
-import Board from "./Components/Game/Board";
+import Board from "./Components/Game/Board/Board";
 
 function App() {
   return (
