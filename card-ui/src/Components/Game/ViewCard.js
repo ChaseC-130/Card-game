@@ -17,6 +17,12 @@ const style = {
 };
 
 export default function ViewCard({name, text, open, handleClose, inHand}) {
+  
+  const [img, setImg] = React.useState("");
+
+  React.useEffect(() => {
+    setImg(`../imgs/` + name.split(' ').join('') + `.png`);    
+  }, [name])
 
   return (
     <div>
@@ -32,8 +38,8 @@ export default function ViewCard({name, text, open, handleClose, inHand}) {
           </Typography>
           <CardMedia
           component="img"
-          height="140"
-          image=""
+          height="250"
+          image={img}
           alt={name}
         />
           <Typography id="modal-modal-description" sx={{ fontSize: 16, mt: 2 }}>
