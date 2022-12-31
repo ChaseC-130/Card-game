@@ -178,6 +178,11 @@
         "Text": "Return any 1 exhausted card you've played this game back to your hand"
     },
     {
+        "Name": "Overgrowth",
+        "Category": "Elemental",
+        "Text": "Return any 2 exhausted card you've played this game back to your deck"
+    },
+    {
         "Name": "The Cost of Knowledge",
         "Category": "Divination",
         "Text": "Lose 2 mana.  Exhaust a random card from the opponent's hand"
