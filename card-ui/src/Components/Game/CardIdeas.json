@@ -224,32 +224,32 @@
         "Text": "Lose 2 mana.  Take control of a Relic"
     },
     {
-        "Name": "1",
+        "Name": "Relic 1",
         "Category": "Relic",
         "Text": "Reduce the cost of tutoring to 1 mana instead of 2"
     },
     {
-        "Name": "2",
+        "Name": "Relic 2",
         "Category": "Relic",
         "Text": "Opponent loses 1 mana each time you play a Temporal card"
     },
     {
-        "Name": "3",
+        "Name": "Relic 3",
         "Category": "Relic",
         "Text": "Draw 1 card for free each time you play cards in Synchrony"
     },
     {
-        "Name": "4",
+        "Name": "Relic 4",
         "Category": "Relic",
         "Text": "Both players lose 1 mana at the start of their turns"
     },
     {
-        "Name": "5",
+        "Name": "Relic 5",
         "Category": "Relic",
         "Text": "Gain 1 mana every other turn"
     },
     {
-        "Name": "6",
+        "Name": "Relic 6",
         "Category": "Relic",
         "Text": "Draw two cards each turn but lose 3 mana instead of 1.  You may no longer tutor"
     },

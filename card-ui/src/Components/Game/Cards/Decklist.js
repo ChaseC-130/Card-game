@@ -43,20 +43,6 @@ export default function Decklist({setText, setName, handleOpen, setInHand}) {
             </ListItemButton>
           </ListItem>]);
         }
-        for (let i = 0; i < myJson.length; i++) {
-            setDeck(prevArr => [...prevArr, <ListItem onClick={() => open(myJson[i].Text, myJson[i].Name)} key={myJson[i].Name} disablePadding>
-            <ListItemButton >
-            <ListItemText primary={myJson[i].Name} />
-            </ListItemButton>
-          </ListItem>]);
-        }
-        for (let i = 0; i < myJson.length; i++) {
-            setDeck(prevArr => [...prevArr, <ListItem onClick={() => open(myJson[i].Text, myJson[i].Name)} key={myJson[i].Name} disablePadding>
-            <ListItemButton >
-            <ListItemText primary={myJson[i].Name} />
-            </ListItemButton>
-          </ListItem>]);
-        }
     }
 
   return (

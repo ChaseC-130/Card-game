@@ -33,9 +33,9 @@ export default function Board() {
     <>
     <ViewCard inHand={inHand} name={name} text={text} open={open} handleClose={handleClose} />
     <Decklist setInHand={setInHand} setText={setText} setName={setName} handleOpen={handleOpen} />
-    <Box sx={{ flexGrow: 1, ml: '100px'}}>
+    <Box sx={{ flexGrow: 1, ml: '100px', mr: '100px'}}>
         
-      <Grid container spacing={2}>
+      <Grid container spacing={2} xs={12}>
         <Grid xs={12}>
           <OpponentHand />
         </Grid>
