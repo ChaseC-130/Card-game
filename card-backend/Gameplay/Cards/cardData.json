@@ -1,0 +1,268 @@
+{
+    "cards" : [
+    {
+        "Name": "Water Shard",
+        "Category": "Synchrony",
+        "Text": "Gain 1 mana; Synchrony: If played with another Shard, gain 3X mana instead"
+        
+    },
+    {
+        "Name": "Fire Shard",
+        "Category": "Synchrony",
+        "Text": "Opponent loses 1 mana; Synchrony: If played with another Shard, opponent loses 3X mana instead"
+    },
+    {
+        "Name": "Wind Shard",
+        "Category": "Synchrony",
+        "Text": "You may take 1 additional draw step this turn; Synchrony: If played with another Shard, you may take X additional draw steps this turn"
+    },
+    {
+        "Name": "Nature Shard",
+        "Category": "Synchrony",
+        "Text": "Opponent may not tutor on their next turn; Synchrony: If played with another Shard, opponent may not tutor for their next 2X turns"
+    },
+    {
+        "Name": "King Jerim's Crown",
+        "Category": "Synchrony",
+        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with King Jerim's Ring and King Jerim's Scepter, opponent loses 15 mana instead"
+    },
+    {
+        "Name": "King Jerim's Ring",
+        "Category": "Synchrony",
+        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with King Jerim's Crown and King Jerim's Scepter, opponent loses 15 mana instead"
+    },
+    {
+        "Name": "King Jerim's Scepter",
+        "Category": "Synchrony",
+        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with King Jerim's Crown and King Jerim's Ring, opponent loses 15 mana instead"
+    },
+    {
+        "Name": "Sand Worm's Trap",
+        "Category": "Temporal",
+        "Text": "Trigger: Opponent activates a Synchrony effect Action: The card effects act as if played individually"
+    },
+    {
+        "Name": "Mana rebound",
+        "Category": "Temporal",
+        "Text": "Trigger: Opponent plays a non-Temporal card Action: Opponent loses mana equal to twice the played card's tier"
+    },
+    {
+        "Name": "Pain Share",
+        "Category": "Temporal",
+        "Text": "Trigger: You lose mana Action: Opponent loses the same amount of mana"
+    },
+    {
+        "Name": "Flames of Hatred",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana for each card in their hand"
+    },
+    {
+        "Name": "Lightning's Fury",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana for every time they've tutored this game"
+    },
+    {
+        "Name": "Thunder's Terror",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana for each of their Temporal cards on the field"
+    },
+    {
+        "Name": "Tornado",
+        "Category": "Elemental",
+        "Text": "Tornado does not trigger temporal cards. Exhaust a Temporal card on the field"
+    },
+    {
+        "Name": "Hurricane",
+        "Category": "Elemental",
+        "Text": "Exhaust 2 Temporal cards on the field"
+    },
+    {
+        "Name": "Eternal Corruption",
+        "Category": "Elemental",
+        "Text": "Opponent loses X mana"
+        
+    },
+    {
+        "Name": "New Beginnings",
+        "Category": "Divination",
+        "Text": "Opponent discards 2 cards and draws 2 cards for free"
+    },
+    {
+        "Name": "Crystal Ball",
+        "Category": "Divination",
+        "Text": "Look at the top 3 cards of your deck"
+    },
+    {
+        "Name": "Witch's Eye",
+        "Category": "Divination",
+        "Text": "Lose 1 mana.  Look at the top 3 cards of your deck and add one to your hand"
+    },
+    {
+        "Name": "Blinded by Greed",
+        "Category": "Divination",
+        "Text": "Opponent may not tutor for the next 3 turns"
+    },
+    {
+        "Name": "Insider Trading",
+        "Category": "Divination",
+        "Text": "Look at the next 2 cards that your opponent tutors"
+    },
+    {
+        "Name": "Peek",
+        "Category": "Divination",
+        "Text": "Opponent reveals their hand"
+    },
+    {
+        "Name": "King Jerim's Bane",
+        "Category": "Divination",
+        "Text": "Opponent reveals their hand - a Temporal card of your choice becomes exhausted"
+    },
+    {
+        "Name": "Fresh Spring",
+        "Category": "Divination",
+        "Text": "Both players exhaust their hands and draw the number of cards they exhausted for free"
+    },
+    {
+        "Name": "Penance",
+        "Category": "Divination",
+        "Text": "Opponent reveals their hand - take a card from their hand but lose mana equal to twice the card's tier"
+    },
+    {
+        "Name": "Confusion",
+        "Category": "Temporal",
+        "Text": "Trigger: Opponent Tutors Action: Opponent loses 6 mana instead of 2"
+    },
+    {
+        "Name": "Holy Protection",
+        "Category": "Elemental",
+        "Text": "Your next Synchrony card(s) will not trigger Temporal Cards"
+    },
+    {
+        "Name": "Silence",
+        "Category": "Temporal",
+        "Text": "Trigger: Opponent plays an Elemental card Action: The card becomes exhausted before activating"
+    },
+    {
+        "Name": "Elemental Lock",
+        "Category": "Elemental",
+        "Text": "Opponent cannot play Synchrony cards next turn"
+    },
+    {
+        "Name": "Nature's Balance",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana.  Opponent lose 5 mana instead if they have more mana than you"
+    },
+    {
+        "Name": "Water of Life",
+        "Category": "Elemental",
+        "Text": "Gain 1 mana for every card you play after this one this turn"
+    },
+    {
+        "Name": "Priest's Blessing",
+        "Category": "Elemental",
+        "Text": "Gain X mana"
+        
+    },
+    {
+        "Name": "World Fire",
+        "Category": "Elemental",
+        "Text": "Both players lose 10 mana"
+    },
+    {
+        "Name": "Engineer's Folly",
+        "Category": "Elemental",
+        "Text": "Exhaust all Temporal cards on the field"
+    },
+    {
+        "Name": "Regrowth",
+        "Category": "Elemental",
+        "Text": "Return any 1 exhausted card you've played this game back to your hand"
+    },
+    {
+        "Name": "Overgrowth",
+        "Category": "Elemental",
+        "Text": "Return any 2 exhausted card you've played this game back to your deck"
+    },
+    {
+        "Name": "The Cost of Knowledge",
+        "Category": "Divination",
+        "Text": "Lose 2 mana.  Exhaust a random card from the opponent's hand"
+    },
+    {
+        "Name": "Poison Dart Frog",
+        "Category": "Elemental",
+        "Text": "Opponent loses 1 mana each turn for the next 4 turns"
+    },
+    {
+        "Name": "Dryad's Curse",
+        "Category": "Synchrony",
+        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with an elemental card, opponent loses 4 mana instead"
+    },
+    {
+        "Name": "Dryad's Wrath",
+        "Category": "Synchrony",
+        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with Temporal cards, Opponent loses 1 + 2X mana instead"
+        
+    },
+    {
+        "Name": "Rogue's Gamble",
+        "Category": "Synchrony",
+        "Text": "Nothing; Synchrony: If played in Synchrony with any card(s) that causes an opponent to lose mana, opponent loses twice that much total mana instead"
+    },
+    {
+        "Name": "Rock Slide",
+        "Category": "Elemental",
+        "Text": "Exhaust a Relic on the field"
+    },
+    {
+        "Name": "Earthquake",
+        "Category": "Elemental",
+        "Text": "Exhaust all Relics on the field"
+    },
+    {
+        "Name": "Persuasion",
+        "Category": "Divination",
+        "Text": "Lose 2 mana.  Take control of a Relic"
+    },
+    {
+        "Name": "Relic 1",
+        "Category": "Relic",
+        "Text": "Reduce the cost of tutoring to 1 mana instead of 2"
+    },
+    {
+        "Name": "Relic 2",
+        "Category": "Relic",
+        "Text": "Opponent loses 1 mana each time you play a Temporal card"
+    },
+    {
+        "Name": "Relic 3",
+        "Category": "Relic",
+        "Text": "Draw 1 card for free each time you play cards in Synchrony"
+    },
+    {
+        "Name": "Relic 4",
+        "Category": "Relic",
+        "Text": "Both players lose 1 mana at the start of their turns"
+    },
+    {
+        "Name": "Relic 5",
+        "Category": "Relic",
+        "Text": "Gain 1 mana every other turn"
+    },
+    {
+        "Name": "Relic 6",
+        "Category": "Relic",
+        "Text": "Draw two cards each turn but lose 3 mana instead of 1.  You may no longer tutor"
+    },
+    {
+        "Name": "True Synchronicity",
+        "Category": "Synchrony",
+        "Text": "Nothing; Synchrony: If played in Synchrony with at least 3 other Synchrony cards that cause your opponent to lose mana, opponent loses twice as much mana instead"
+    },
+    {
+        "Name": "Fuel the Flames",
+        "Category": "Elemental",
+        "Text": "Exhaust one of your Temporal cards and gain 5 mana"
+    }
+]
+}
