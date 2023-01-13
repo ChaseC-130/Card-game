@@ -17,7 +17,7 @@ export default function OpponentCounter() {
 return (
     <Box>
         <ListItem>
-            <Button variant="contained">Exhaustion</Button>
+            <Button variant="contained">View Opponent's Exhaustion</Button>
         </ListItem>
     <ListItem disablePadding>
     <ListItemButton >        

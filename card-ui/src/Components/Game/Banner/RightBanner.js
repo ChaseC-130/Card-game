@@ -10,7 +10,7 @@ import List from '@mui/material/List';
 import YourCounter from './YourCounter';
 import OpponentCounter from './OpponentCounter';
 import Divider from '@mui/material/Divider';
-
+import EndTurn from './EndTurn'
 
 
 const drawerWidth = 240;
@@ -42,6 +42,7 @@ export default function RightBanner({}) {
           
         <OpponentCounter />
         <YourCounter />
+        <EndTurn />
         </List>
         
       </Drawer>

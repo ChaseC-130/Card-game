@@ -7,6 +7,7 @@ import Hand from '../Cards/Hand';
 import OpponentHand from '../Cards/OpponentHand';
 import Decklist from '../Cards/Decklist';
 import ViewCard from '../Cards/ViewCard';
+import RightBanner from '../Banner/RightBanner'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -33,6 +34,7 @@ export default function Board() {
     <>
     <ViewCard inHand={inHand} name={name} text={text} open={open} handleClose={handleClose} />
     <Decklist setInHand={setInHand} setText={setText} setName={setName} handleOpen={handleOpen} />
+    <RightBanner />
     <Box sx={{ flexGrow: 1, ml: '100px', mr: '100px'}}>
         
       <Grid container spacing={2} xs={12}>
@@ -42,7 +44,6 @@ export default function Board() {
         <Grid xs={12} sx={{
             position: 'absolute',
             bottom: 0,
-            
         }}>
             <Hand setInHand={setInHand} setText={setText} setName={setName} handleOpen={handleOpen} />
       </Grid>

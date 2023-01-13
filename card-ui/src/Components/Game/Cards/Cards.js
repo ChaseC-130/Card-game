@@ -53,10 +53,10 @@ export default function Cards({handleOpen, setInHand, setViewName, setViewText, 
       />
     
         <CardContent>
-          <Typography gutterBottom fontSize="16px" variant="h6" component="div">
+          <Typography gutterBottom fontSize="18px" variant="h6" component="div">
             {name}
           </Typography>
-          <Typography fontSize="11px" variant="body2" color="text.secondary">
+          <Typography fontSize="16px" variant="body2" color="text.secondary">
           {text}
           </Typography>
         </CardContent>

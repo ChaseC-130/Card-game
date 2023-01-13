@@ -14,10 +14,11 @@ export default function YourCounter() {
     const [draw, setDraw] = React.useState(0);
     const [tutorCost, setTutorCost] = React.useState(2);
 
+
 return (
     <Box>
         <ListItem>
-            <Button variant="contained">Exhaustion</Button>
+            <Button variant="contained">View Your Exhaustion</Button>
         </ListItem>
     <ListItem disablePadding>
     <ListItemButton >        
