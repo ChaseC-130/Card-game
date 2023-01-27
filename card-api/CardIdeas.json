@@ -18,22 +18,22 @@
     {
         "Name": "Nature Shard",
         "Category": "Synchrony",
-        "Text": "Opponent may not tutor on their next turn; Synchrony: If played with another Shard, opponent may not tutor for their next 2X turns"
+        "Text": "Opponent may not Conjure on their next turn; Synchrony: If played with another Shard, opponent may not Conjure for their next 2X turns"
     },
     {
         "Name": "King Jerim's Crown",
         "Category": "Synchrony",
-        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with King Jerim's Ring and King Jerim's Scepter, opponent loses 15 mana instead"
+        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with King Jerim's Ring and King Jerim's Scepter, opponent loses 6 mana instead"
     },
     {
         "Name": "King Jerim's Ring",
         "Category": "Synchrony",
-        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with King Jerim's Crown and King Jerim's Scepter, opponent loses 15 mana instead"
+        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with King Jerim's Crown and King Jerim's Scepter, opponent loses 6 mana instead"
     },
     {
         "Name": "King Jerim's Scepter",
         "Category": "Synchrony",
-        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with King Jerim's Crown and King Jerim's Ring, opponent loses 15 mana instead"
+        "Text": "Opponent loses 1 mana; Synchrony: If played in Synchrony with King Jerim's Crown and King Jerim's Ring, opponent loses 6 mana instead"
     },
     {
         "Name": "Sand Worm's Trap",
@@ -58,12 +58,12 @@
     {
         "Name": "Lightning's Fury",
         "Category": "Elemental",
-        "Text": "Opponent loses 1 mana for every time they've tutored this game"
+        "Text": "Opponent loses 1 mana for every time they've Conjured this game"
     },
     {
         "Name": "Thunder's Terror",
         "Category": "Elemental",
-        "Text": "Opponent loses 1 mana for each of their Temporal cards on the field"
+        "Text": "Opponent loses 2 mana for each of their Temporal cards on the field"
     },
     {
         "Name": "Tornado",
@@ -73,7 +73,7 @@
     {
         "Name": "Hurricane",
         "Category": "Elemental",
-        "Text": "Exhaust 2 Temporal cards on the field"
+        "Text": "Exhaust all Temporal cards on the field.  Each player loses mana equal to the number of Temporal cards that were on the field"
     },
     {
         "Name": "Eternal Corruption",
@@ -84,10 +84,10 @@
     {
         "Name": "New Beginnings",
         "Category": "Divination",
-        "Text": "Opponent discards 2 cards and draws 2 cards for free"
+        "Text": "Opponent Exhasts 2 cards and then draws 2 cards for free"
     },
     {
-        "Name": "Crystal Ball",
+        "Name": "Astral Vision",
         "Category": "Divination",
         "Text": "Look at the top 3 cards of your deck"
     },
@@ -99,12 +99,12 @@
     {
         "Name": "Blinded by Greed",
         "Category": "Divination",
-        "Text": "Opponent may not tutor for the next 3 turns"
+        "Text": "Opponent may not conjure for the next 3 turns"
     },
     {
         "Name": "Insider Trading",
         "Category": "Divination",
-        "Text": "Look at the next 2 cards that your opponent tutors"
+        "Text": "The next two cards your opponent conjures are revealed to you"
     },
     {
         "Name": "Peek",
@@ -114,7 +114,7 @@
     {
         "Name": "King Jerim's Bane",
         "Category": "Divination",
-        "Text": "Opponent reveals their hand - a Temporal card of your choice becomes exhausted"
+        "Text": "Opponent reveals their hand - a Syncrony card of your choice becomes exhausted"
     },
     {
         "Name": "Fresh Spring",
@@ -129,7 +129,7 @@
     {
         "Name": "Confusion",
         "Category": "Temporal",
-        "Text": "Trigger: Opponent Tutors Action: Opponent loses 6 mana instead of 2"
+        "Text": "Trigger: Opponent Conjurs Action: Opponent loses 6 mana instead of 2"
     },
     {
         "Name": "Holy Protection",
@@ -154,7 +154,7 @@
     {
         "Name": "Water of Life",
         "Category": "Elemental",
-        "Text": "Gain 1 mana for every card you play after this one this turn"
+        "Text": "Gain 2 mana for every card you play after this one this turn"
     },
     {
         "Name": "Priest's Blessing",
@@ -185,7 +185,7 @@
     {
         "Name": "Poison Dart Frog",
         "Category": "Elemental",
-        "Text": "Opponent loses 1 mana each turn for the next 4 turns"
+        "Text": "Opponent loses 1 mana during their draw step for the next 5 turns"
     },
     {
         "Name": "Dryad's Curse",
@@ -200,8 +200,8 @@
     },
     {
         "Name": "Rogue's Gamble",
-        "Category": "Synchrony",
-        "Text": "Nothing; Synchrony: If played in Synchrony with any card(s) that causes an opponent to lose mana, opponent loses twice that much total mana instead"
+        "Category": "Divination",
+        "Text": "Look at the top card of your deck.  If it is a Divination card, opponent loses 6 mana; otherwise, you lose 6 mana"
     },
     {
         "Name": "Rock Slide",
@@ -214,44 +214,49 @@
         "Text": "Exhaust all Relics on the field"
     },
     {
+        "Name": "Decay",
+        "Category": "Elemental",
+        "Text": "Opponent loses 2 mana for each of their Relic cards on the field"
+    },
+    {
         "Name": "Persuasion",
         "Category": "Divination",
         "Text": "Lose 2 mana.  Take control of a Relic"
     },
     {
-        "Name": "1",
+        "Name": "Hand of Midas",
         "Category": "Relic",
-        "Text": "Reduce the cost of tutoring to 1 mana instead of 2"
+        "Text": "Reduce the cost of Conjuring to 1 mana instead of 2"
     },
     {
-        "Name": "2",
-        "Category": "Relic",
-        "Text": "Opponent loses 1 mana each time you play a Temporal card"
-    },
-    {
-        "Name": "3",
+        "Name": "The Tomb of King Jerim",
         "Category": "Relic",
         "Text": "Draw 1 card for free each time you play cards in Synchrony"
     },
     {
-        "Name": "4",
+        "Name": "Bonding Scroll",
         "Category": "Relic",
-        "Text": "Both players lose 1 mana at the start of their turns"
+        "Text": "Each player loses 1 mana during their respective draw steps"
     },
     {
-        "Name": "5",
+        "Name": "Fountain of Life",
         "Category": "Relic",
-        "Text": "Gain 1 mana every other turn"
+        "Text": "Gain 1 mana at the start of your turn"
     },
     {
-        "Name": "6",
+        "Name": "Crystal Ball",
         "Category": "Relic",
-        "Text": "Draw two cards each turn but lose 3 mana instead of 1.  You may no longer tutor"
+        "Text": "Draw two cards each turn but lose 3 mana instead of 1.  You may no longer Conjure"
     },
     {
         "Name": "True Synchronicity",
         "Category": "Synchrony",
-        "Text": "Nothing; Synchrony: If played in Synchrony with at least 3 other Synchrony cards that cause your opponent to lose mana, opponent loses twice as much mana instead"
+        "Text": "Gain 1 mana; Synchrony: If played in Synchrony with at least 3 other Synchrony cards that cause your opponent to lose mana, opponent loses twice as much mana instead"
+    },
+    {
+        "Name": "The Resurection of King Jerim",
+        "Category": "Syncrony",
+        "Text": "Nothing; Syncrony: With The Tomb of King Jerim on the field, If played in Synchrony with King Jerim's Crown, King Jerim's Scepter, and King Jerim's Ring, Opponent loses 100 mana"
     },
     {
         "Name": "Fuel the Flames",
