@@ -38,7 +38,7 @@ export default function ViewCard({name, text, open, handleClose, inHand}) {
           </Typography>
           <CardMedia
           component="img"
-          height="250"
+          height="300"
           image={img}
           alt={name}
         />

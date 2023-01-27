@@ -5,3 +5,4 @@ async function fetchCardData(cardName) {
     const cardData = JSON.parse(json)
     console.log(cardData)
 }
+
