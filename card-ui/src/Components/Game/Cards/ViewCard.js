@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import CardMedia from '@mui/material/CardMedia';
+import {SocketContext} from '../../../App';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -16,14 +17,24 @@ const style = {
   p: 4,
 };
 
-export default function ViewCard({name, text, open, handleClose, inHand, tutoring=false}) {
+export default function ViewCard({name, text, open, handleClose, inHand, tutoring=false, setTutoring}) {
   
   const [img, setImg] = React.useState("");
   const [cardPlayed, setCardPlayed] = React.useState(false);
 
+  const socket = React.useContext(SocketContext);
+
+  
   const handlePlay = () => {
 
   }
+
+  React.useEffect(() => {
+    socket.on(("tutor"), (arg) => {
+      setTutoring(arg);
+    })
+  })
+
 
   React.useEffect(() => {
     setImg(`../imgs/` + name.split(' ').join('') + `.png`);    

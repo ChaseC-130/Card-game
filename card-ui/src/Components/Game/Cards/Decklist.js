@@ -21,15 +21,21 @@ import {SocketContext} from '../../../App';
 
 const drawerWidth = 240;
 
-export default function Decklist({setText, setName, handleOpen, setInHand, tutoring=false}) {
+export default function Decklist({setText, setName, handleOpen, setInHand, tutoring=false, setTutoring}) {
 
     const [deck, setDeck] = React.useState([]);
 
     const socket = React.useContext(SocketContext);
 
     React.useEffect(() => {
-      socket.on(("connect"), () => {
-        console.log("Successfully connected via child component")
+      socket.on(("deckchange"), (arg) => {
+        setDeck(arg);
+      })
+    })
+
+    React.useEffect(() => {
+      socket.on(("tutor"), (arg) => {
+        setTutoring(arg);
       })
     })
   

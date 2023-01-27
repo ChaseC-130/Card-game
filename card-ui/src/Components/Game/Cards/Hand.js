@@ -4,10 +4,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Cards from './Cards';
 import DrawPhase from './DrawPhase';
 import Typography from '@mui/material/Typography';
-import io from 'socket.io-client';
+import {SocketContext} from '../../../App';
 
-
-const socket = io("localhost:3000");
 
 export default function Hand({handleOpen, setInHand, setName, setText}) {
 
@@ -16,7 +14,13 @@ export default function Hand({handleOpen, setInHand, setName, setText}) {
     const [drawCost, setDrawCost] = React.useState(2);
 
     const [width, setWidth] = React.useState(150);
+    const socket = React.useContext(SocketContext);
 
+    React.useEffect(() => {
+      socket.on(("handchange"), (arg) => {
+        setHand(arg);
+      })
+    })
 
     React.useEffect(() => {
         setHand([]);

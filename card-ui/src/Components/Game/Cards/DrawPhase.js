@@ -4,6 +4,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import CardMedia from '@mui/material/CardMedia';
+import {SocketContext} from '../../../App';
+import { DEFAULT_COLOR_SCHEME_STORAGE_KEY } from '@mui/system/cssVars/getInitColorSchemeScript';
+
+
 
 const style = {
   position: 'absolute',
@@ -17,16 +21,31 @@ const style = {
   p: 4,
 };
 
-export default function DrawPhase({open, cost}) {
+export default function DrawPhase({open, cost, setOpen}) {
   
   
-  
-  const handleClose = () => {
+  const socket = React.useContext(SocketContext);
 
+  /*
+  React.useEffect(() => {
+    socket.on(("handchange"), (arg) => {
+      setHand(arg);
+    })
+  })
+*/
+
+  const handleClose = () => {
+    setOpen(false);
   }
 
-  const handlePlay = () => {
-    
+  const handleDraw = () => {
+    socket.emit("drawCard");
+    handleClose();
+  }
+
+  const handleTutor = () => {
+    socket.emit("tutorCard");
+    handleClose();
   }
 
   /*
@@ -45,8 +64,8 @@ export default function DrawPhase({open, cost}) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Button variant="contained" onClick={handlePlay} sx={{mt: 2, height: '25%', width: '100%'}}>Tutor Card Cost: {cost}</Button>
-          <Button variant="contained" onClick={handlePlay} sx={{mt: 2, height: '25%', width: '100%'}}>Draw Card</Button>
+          <Button variant="contained" onClick={handleDraw} sx={{mt: 2, height: '25%', width: '100%'}}>Tutor Card Cost: {cost}</Button>
+          <Button variant="contained" onClick={handleTutor} sx={{mt: 2, height: '25%', width: '100%'}}>Draw Card</Button>
         </Box>
       </Modal>
     </div>
