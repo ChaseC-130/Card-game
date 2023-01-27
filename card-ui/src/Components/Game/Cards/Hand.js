@@ -2,14 +2,21 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import Cards from './Cards';
+import DrawPhase from './DrawPhase';
 import Typography from '@mui/material/Typography';
+import io from 'socket.io-client';
 
+
+const socket = io("localhost:3000");
 
 export default function Hand({handleOpen, setInHand, setName, setText}) {
 
     const [hand, setHand] = React.useState([]);
+    const [drawPhase, setDrawPhase] = React.useState(false);
+    const [drawCost, setDrawCost] = React.useState(2);
 
     const [width, setWidth] = React.useState(150);
+
 
     React.useEffect(() => {
         setHand([]);
@@ -31,6 +38,7 @@ export default function Hand({handleOpen, setInHand, setName, setText}) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
+    <DrawPhase open={drawPhase} cost={drawCost} />
     <Grid display="flex" justifyContent="center" alignItems="center" container spacing={2}>
       <Typography>Your Hand</Typography>
       </Grid>

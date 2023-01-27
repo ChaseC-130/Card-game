@@ -32,8 +32,10 @@ export default function Board() {
     
   return (
     <>
+
     <ViewCard inHand={inHand} name={name} text={text} open={open} handleClose={handleClose} />
     <Decklist setInHand={setInHand} setText={setText} setName={setName} handleOpen={handleOpen} />
+
     <RightBanner />
     <Box sx={{ flexGrow: 1, ml: '100px', mr: '100px'}}>
         

@@ -16,9 +16,14 @@ const style = {
   p: 4,
 };
 
-export default function ViewCard({name, text, open, handleClose, inHand}) {
+export default function ViewCard({name, text, open, handleClose, inHand, tutoring=false}) {
   
   const [img, setImg] = React.useState("");
+  const [cardPlayed, setCardPlayed] = React.useState(false);
+
+  const handlePlay = () => {
+
+  }
 
   React.useEffect(() => {
     setImg(`../imgs/` + name.split(' ').join('') + `.png`);    
@@ -45,7 +50,8 @@ export default function ViewCard({name, text, open, handleClose, inHand}) {
           <Typography id="modal-modal-description" sx={{ fontSize: 16, mt: 2 }}>
             {text}
           </Typography>
-          {inHand && <Button variant="contained" sx={{mt: 2, height: '25%', width: '100%'}}>Play Card</Button>}
+          {tutoring && <Button color="secondary" sx={{mt: 2, height: '25%', width: '100%'}} variant="contained">Conjure Card</Button>}
+          {inHand && <Button variant="contained" onClick={handlePlay} sx={{mt: 2, height: '25%', width: '100%'}}>Play Card</Button>}
         </Box>
       </Modal>
     </div>

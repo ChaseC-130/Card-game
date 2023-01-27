@@ -15,13 +15,23 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import myJson from '../CardIdeas.json';
 import ViewCard from './ViewCard';
-
+import { LinearProgress } from '@mui/material';
+import '../../Stylesheets/Main.css'
+import {SocketContext} from '../../../App';
 
 const drawerWidth = 240;
 
-export default function Decklist({setText, setName, handleOpen, setInHand}) {
+export default function Decklist({setText, setName, handleOpen, setInHand, tutoring=false}) {
 
     const [deck, setDeck] = React.useState([]);
+
+    const socket = React.useContext(SocketContext);
+
+    React.useEffect(() => {
+      socket.on(("connect"), () => {
+        console.log("Successfully connected via child component")
+      })
+    })
   
     function open(text, name) {
         setText(text);
@@ -48,7 +58,7 @@ export default function Decklist({setText, setName, handleOpen, setInHand}) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-
+      
       <Drawer
         sx={{
           width: drawerWidth,
@@ -61,9 +71,16 @@ export default function Decklist({setText, setName, handleOpen, setInHand}) {
         variant="permanent"
         anchor="left"
       >
+        
+        
         <List>
+          {tutoring && 
+        <Box sx={{ml: "200px"}} className="rotate">
+      <LinearProgress sx={{height: '1vh', width: deck.length * 48 + 90 + 'px', opacity: 0.15}} color="primary"/>    
+          </Box>}
             <Typography sx={{fontSize: 18, mb: 2}}>Deck</Typography>
             <Typography sx={{fontSize: 18, mb: 2}}>Cards Remaining: {deck.length}</Typography>
+            
           {deck}
         </List>
         <Divider />
